@@ -1,0 +1,3396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Al Nasir Hair Salon | Premium Grooming</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--black:#060606;
+--black2:#0d0d0d;
+--card:#121212;
+--card2:#181818;
+--gold:#c8a45b;
+--gold2:#f0d28b;
+--white:#ffffff;
+--muted:#969696;
+--line:rgba(201,164,92,.22);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:"DM Sans",sans-serif;
+background:var(--black);
+color:white;
+overflow-x:hidden;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+button,
+input{
+font-family:inherit;
+}
+
+.container{
+width:min(1180px,92%);
+margin:auto;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+background:rgba(5,5,5,.92);
+backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.navbar{
+height:76px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+font-family:"Playfair Display",serif;
+font-size:24px;
+font-weight:700;
+letter-spacing:2px;
+}
+
+.logo span{
+color:var(--gold2);
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:27px;
+}
+
+.nav-links a{
+font-size:13px;
+color:#ddd;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:var(--gold2);
+}
+
+.nav-book{
+border:1px solid var(--gold);
+padding:10px 17px;
+border-radius:30px;
+color:var(--gold2)!important;
+}
+
+.menu-btn{
+display:none;
+background:none;
+border:0;
+color:white;
+font-size:27px;
+cursor:pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+min-height:650px;
+height:74vh;
+max-height:760px;
+
+display:flex;
+align-items:center;
+
+position:relative;
+overflow:hidden;
+
+background:
+linear-gradient(
+90deg,
+rgba(0,0,0,.94),
+rgba(0,0,0,.65),
+rgba(0,0,0,.18)
+),
+
+url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=90")
+center/cover no-repeat;
+}
+
+.hero:after{
+content:"";
+position:absolute;
+left:0;
+right:0;
+bottom:0;
+height:28%;
+
+background:
+linear-gradient(
+transparent,
+var(--black)
+);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
+padding-top:55px;
+
+animation:heroIn .9s ease both;
+}
+
+.eyebrow{
+color:var(--gold2);
+font-size:11px;
+font-weight:800;
+letter-spacing:4px;
+text-transform:uppercase;
+margin-bottom:16px;
+}
+
+.hero h1{
+font-family:"Playfair Display",serif;
+font-size:clamp(46px,7vw,80px);
+line-height:.98;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:var(--gold2);
+}
+
+.hero p{
+color:#d0d0d0;
+max-width:570px;
+font-size:15px;
+line-height:1.8;
+}
+
+.hero-buttons{
+display:flex;
+gap:13px;
+flex-wrap:wrap;
+margin-top:28px;
+}
+
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+
+padding:14px 22px;
+
+border-radius:5px;
+border:1px solid var(--gold);
+
+font-size:13px;
+font-weight:800;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.btn-gold{
+background:linear-gradient(
+135deg,
+var(--gold2),
+var(--gold)
+);
+
+color:#111;
+}
+
+.btn-gold:hover{
+transform:translateY(-3px);
+box-shadow:
+0 15px 35px rgba(201,164,92,.25);
+}
+
+.btn-outline{
+color:white;
+background:rgba(0,0,0,.25);
+}
+
+.btn-outline:hover{
+background:white;
+color:#111;
+}
+
+@keyframes heroIn{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+/* ================= TRUST ================= */
+
+.trust{
+background:#0d0d0d;
+border-top:1px solid var(--line);
+border-bottom:1px solid var(--line);
+}
+
+.trust-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+}
+
+.trust-item{
+text-align:center;
+padding:23px 10px;
+
+border-right:1px solid rgba(255,255,255,.06);
+}
+
+.trust-item:last-child{
+border-right:0;
+}
+
+.trust-item strong{
+display:block;
+color:var(--gold2);
+font-size:13px;
+margin-bottom:4px;
+}
+
+.trust-item span{
+color:#777;
+font-size:11px;
+}
+
+
+/* ================= SECTION ================= */
+
+section{
+padding:88px 0;
+}
+
+.section-head{
+text-align:center;
+margin-bottom:40px;
+}
+
+.section-small{
+display:block;
+
+color:var(--gold2);
+
+font-size:11px;
+font-weight:800;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+}
+
+.section-head h2{
+font-family:"Playfair Display",serif;
+
+font-size:
+clamp(35px,5vw,53px);
+
+margin:11px 0;
+}
+
+.section-head p{
+max-width:620px;
+margin:auto;
+
+color:#888;
+
+line-height:1.7;
+}
+
+
+/* ================= FILTERS ================= */
+
+.filters{
+display:flex;
+justify-content:center;
+align-items:center;
+
+gap:9px;
+flex-wrap:wrap;
+
+margin-bottom:30px;
+}
+
+.filter{
+background:#111;
+
+border:1px solid #292929;
+
+color:#999;
+
+padding:9px 15px;
+
+border-radius:30px;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.filter.active,
+.filter:hover{
+background:var(--gold);
+border-color:var(--gold);
+color:#111;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services-grid{
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:20px;
+}
+
+.service-card{
+background:
+linear-gradient(
+145deg,
+#181818,
+#0e0e0e
+);
+
+border:1px solid rgba(255,255,255,.07);
+
+border-radius:10px;
+
+overflow:hidden;
+
+transition:.35s;
+}
+
+.service-card:hover{
+transform:translateY(-7px);
+
+border-color:var(--line);
+
+box-shadow:
+0 22px 55px rgba(0,0,0,.45);
+}
+
+.service-image{
+height:250px;
+
+background:#191919;
+
+overflow:hidden;
+
+position:relative;
+}
+
+.service-image img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.5s;
+}
+
+.service-card:hover .service-image img{
+transform:scale(1.06);
+}
+
+.service-body{
+padding:19px;
+}
+
+.service-tag{
+display:inline-block;
+
+color:var(--gold2);
+
+font-size:9px;
+
+font-weight:800;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+margin-bottom:7px;
+}
+
+.service-body h3{
+font-family:"Playfair Display",serif;
+
+font-size:22px;
+
+margin-bottom:6px;
+}
+
+.service-body p{
+color:#888;
+
+font-size:12px;
+
+line-height:1.6;
+
+min-height:40px;
+}
+
+.service-bottom{
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+margin-top:17px;
+}
+
+.price{
+color:var(--gold2);
+
+font-size:20px;
+
+font-weight:800;
+}
+
+.book-btn{
+background:var(--gold);
+
+border:0;
+
+color:#111;
+
+font-weight:800;
+
+padding:9px 14px;
+
+border-radius:4px;
+
+cursor:pointer;
+
+transition:.25s;
+}
+
+.book-btn:hover{
+background:var(--gold2);
+transform:translateY(-2px);
+}
+
+
+/* ================= PROMO ================= */
+
+.promo{
+border-top:1px solid var(--line);
+border-bottom:1px solid var(--line);
+
+background:
+
+linear-gradient(
+90deg,
+rgba(0,0,0,.91),
+rgba(0,0,0,.45)
+),
+
+url("https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1800&q=90")
+center/cover no-repeat;
+}
+
+.promo-content{
+max-width:650px;
+}
+
+.promo h2{
+font-family:"Playfair Display",serif;
+
+font-size:
+clamp(38px,5vw,58px);
+
+line-height:1.02;
+
+margin:10px 0 17px;
+}
+
+.promo p{
+color:#ccc;
+
+line-height:1.8;
+}
+
+
+/* ================= GALLERY ================= */
+
+.gallery{
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+grid-auto-rows:230px;
+
+gap:11px;
+}
+
+.gallery-item{
+overflow:hidden;
+
+border-radius:7px;
+
+background:#181818;
+}
+
+.gallery-item.tall{
+grid-row:span 2;
+}
+
+.gallery-item.wide{
+grid-column:span 2;
+}
+
+.gallery-item img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.5s;
+}
+
+.gallery-item:hover img{
+transform:scale(1.08);
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-grid{
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:55px;
+
+align-items:center;
+}
+
+.about-image{
+height:500px;
+
+border-radius:9px;
+
+overflow:hidden;
+
+border:1px solid var(--line);
+
+background:#181818;
+}
+
+.about-image img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+}
+
+.about-copy h2{
+font-family:"Playfair Display",serif;
+
+font-size:
+clamp(37px,5vw,54px);
+
+margin:11px 0 19px;
+}
+
+.about-copy p{
+color:#929292;
+
+line-height:1.85;
+
+margin-bottom:12px;
+}
+
+.features{
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:14px;
+
+margin-top:24px;
+}
+
+.feature{
+border-left:2px solid var(--gold);
+
+padding-left:11px;
+}
+
+.feature strong{
+display:block;
+
+font-size:13px;
+}
+
+.feature span{
+font-size:11px;
+
+color:#777;
+}
+
+
+/* ================= REVIEWS ================= */
+
+.review-grid{
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:19px;
+}
+
+.review{
+background:#121212;
+
+border:1px solid rgba(255,255,255,.06);
+
+padding:25px;
+
+border-radius:8px;
+}
+
+.stars{
+color:var(--gold2);
+
+letter-spacing:2px;
+
+margin-bottom:13px;
+}
+
+.review p{
+font-size:13px;
+
+color:#aaa;
+
+line-height:1.8;
+}
+
+.reviewer{
+display:flex;
+
+align-items:center;
+
+gap:11px;
+
+margin-top:18px;
+}
+
+.avatar{
+width:40px;
+height:40px;
+
+border-radius:50%;
+
+background:var(--gold);
+
+color:#111;
+
+display:grid;
+
+place-items:center;
+
+font-weight:900;
+}
+
+.reviewer strong{
+display:block;
+
+font-size:12px;
+}
+
+.reviewer span{
+font-size:10px;
+
+color:#666;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-box{
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+background:#111;
+
+border:1px solid var(--line);
+
+border-radius:10px;
+
+overflow:hidden;
+}
+
+.contact-info{
+padding:42px;
+}
+
+.contact-info h2{
+font-family:"Playfair Display",serif;
+
+font-size:39px;
+
+margin:10px 0 15px;
+}
+
+.contact-info>p{
+color:#888;
+
+line-height:1.8;
+}
+
+.contact-details{
+display:grid;
+
+gap:15px;
+
+margin:25px 0;
+}
+
+.contact-details strong{
+display:block;
+
+color:var(--gold2);
+
+font-size:10px;
+
+letter-spacing:1.5px;
+
+margin-bottom:3px;
+}
+
+.contact-details div{
+color:#aaa;
+
+font-size:13px;
+}
+
+.contact-image{
+min-height:390px;
+
+display:grid;
+
+place-items:center;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.28),
+rgba(0,0,0,.58)
+),
+
+url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=90")
+center/cover no-repeat;
+}
+
+.location-card{
+background:rgba(8,8,8,.88);
+
+border:1px solid var(--gold);
+
+padding:24px;
+
+text-align:center;
+}
+
+.location-card h3{
+font-family:"Playfair Display",serif;
+
+font-size:24px;
+}
+
+.location-card p{
+color:#888;
+
+font-size:12px;
+
+margin-top:5px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+background:#050505;
+
+border-top:1px solid #161616;
+
+padding:50px 0 22px;
+}
+
+.footer-grid{
+display:grid;
+
+grid-template-columns:
+1.5fr 1fr 1fr;
+
+gap:40px;
+}
+
+.footer-brand p{
+color:#777;
+
+max-width:420px;
+
+font-size:12px;
+
+line-height:1.8;
+
+margin-top:14px;
+}
+
+.footer-column h4{
+color:var(--gold2);
+
+margin-bottom:14px;
+}
+
+.footer-column a{
+display:block;
+
+color:#777;
+
+font-size:12px;
+
+margin-bottom:8px;
+}
+
+.footer-column a:hover{
+color:white;
+}
+
+.copyright{
+text-align:center;
+
+border-top:1px solid #151515;
+
+margin-top:35px;
+
+padding-top:19px;
+
+color:#555;
+
+font-size:10px;
+}
+
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+position:fixed;
+
+right:18px;
+bottom:18px;
+
+width:58px;
+height:58px;
+
+border-radius:50%;
+
+background:#25D366;
+
+display:grid;
+
+place-items:center;
+
+color:white;
+
+font-size:24px;
+
+z-index:1100;
+
+box-shadow:
+0 8px 30px rgba(0,0,0,.5);
+
+transition:.25s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+
+/* ================= MODAL ================= */
+
+.modal{
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.84);
+
+backdrop-filter:blur(8px);
+
+display:none;
+
+align-items:center;
+
+justify-content:center;
+
+padding:18px;
+
+z-index:2000;
+}
+
+.modal.show{
+display:flex;
+}
+
+.modal-box{
+width:min(510px,100%);
+
+max-height:90vh;
+
+overflow:auto;
+
+background:#121212;
+
+border:1px solid var(--gold);
+
+border-radius:10px;
+
+padding:28px;
+
+position:relative;
+}
+
+.close{
+position:absolute;
+
+right:17px;
+top:10px;
+
+font-size:27px;
+
+color:#999;
+
+cursor:pointer;
+}
+
+.modal-box h2{
+font-family:"Playfair Display",serif;
+
+font-size:32px;
+}
+
+.modal-box>p{
+color:#777;
+
+font-size:12px;
+
+margin:5px 0 20px;
+}
+
+.selected-services{
+display:grid;
+
+gap:7px;
+
+margin-bottom:15px;
+}
+
+.selected-item{
+background:#1b1b1b;
+
+padding:10px;
+
+border-radius:4px;
+
+display:flex;
+
+justify-content:space-between;
+
+font-size:12px;
+}
+
+.total{
+border-top:1px solid #292929;
+
+padding-top:13px;
+
+display:flex;
+
+justify-content:space-between;
+
+font-weight:800;
+
+margin-bottom:16px;
+}
+
+.total span:last-child{
+color:var(--gold2);
+}
+
+.input{
+width:100%;
+
+background:#090909;
+
+border:1px solid #292929;
+
+color:white;
+
+padding:12px;
+
+border-radius:4px;
+
+margin-bottom:9px;
+
+outline:none;
+}
+
+.input:focus{
+border-color:var(--gold);
+}
+
+
+/* ================= REVEAL ================= */
+
+.reveal{
+opacity:0;
+
+transform:translateY(24px);
+
+transition:
+opacity .7s ease,
+transform .7s ease;
+}
+
+.reveal.visible{
+opacity:1;
+
+transform:translateY(0);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:850px){
+
+.nav-links{
+position:absolute;
+
+top:76px;
+left:0;
+
+width:100%;
+
+background:#080808;
+
+display:none;
+
+flex-direction:column;
+
+padding:21px;
+
+border-bottom:1px solid var(--line);
+}
+
+.nav-links.open{
+display:flex;
+}
+
+.menu-btn{
+display:block;
+}
+
+.services-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.review-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.about-grid,
+.contact-box{
+grid-template-columns:1fr;
+}
+
+.gallery{
+grid-template-columns:repeat(2,1fr);
+}
+
+.gallery-item.tall,
+.gallery-item.wide{
+grid-row:span 1;
+grid-column:span 1;
+}
+
+.footer-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+
+@media(max-width:560px){
+
+section{
+padding:65px 0;
+}
+
+.hero{
+min-height:600px;
+
+height:70vh;
+
+background-position:
+58% center;
+}
+
+.hero h1{
+font-size:47px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.btn{
+width:100%;
+}
+
+.trust-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.trust-item{
+border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.services-grid,
+.review-grid{
+grid-template-columns:1fr;
+}
+
+.service-image{
+height:245px;
+}
+
+.gallery{
+grid-auto-rows:185px;
+}
+
+.about-image{
+height:350px;
+}
+
+.contact-info{
+padding:29px 22px;
+}
+
+.contact-info h2{
+font-size:34px;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#home" class="logo">
+AL <span>NASIR</span>
+</a>
+
+<button
+class="menu-btn"
+onclick="toggleMenu()">
+☰
+</button>
+
+<nav
+class="nav-links"
+id="navLinks">
+
+<a href="#home">Home</a>
+
+<a href="#services">
+Styles
+</a>
+
+<a href="#gallery">
+Gallery
+</a>
+
+<a href="#about">
+About
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+<a
+href="#services"
+class="nav-book">
+Book Now
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section
+class="hero"
+id="home">
+
+<div class="container hero-content">
+
+<div class="eyebrow">
+AL NASIR • PREMIUM MEN'S GROOMING
+</div>
+
+<h1>
+Sharp Cuts.<br>
+<span>Signature Style.</span>
+</h1>
+
+<p>
+Modern fades, precision cuts, beard sculpting and
+premium grooming — crafted for today's confident man.
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="#services"
+class="btn btn-gold">
+Explore Styles
+</a>
+
+<a
+href="#contact"
+class="btn btn-outline">
+Visit Salon
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= TRUST ================= -->
+
+<div class="trust">
+
+<div class="container trust-grid">
+
+<div class="trust-item">
+<strong>Precision Cuts</strong>
+<span>Detailed finishing</span>
+</div>
+
+<div class="trust-item">
+<strong>Trending Styles</strong>
+<span>Modern barber looks</span>
+</div>
+
+<div class="trust-item">
+<strong>Premium Feel</strong>
+<span>Luxury experience</span>
+</div>
+
+<div class="trust-item">
+<strong>Easy Booking</strong>
+<span>WhatsApp appointment</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="section-small">
+Signature Menu
+</span>
+
+<h2>
+Trending Hair & Grooming
+</h2>
+
+<p>
+Choose a haircut or grooming style and book
+your preferred service.
+</p>
+
+</div>
+
+
+<div class="filters">
+
+<button
+class="filter active"
+onclick="filterServices('all',this)">
+All Styles
+</button>
+
+<button
+class="filter"
+onclick="filterServices('fade',this)">
+Fades
+</button>
+
+<button
+class="filter"
+onclick="filterServices('classic',this)">
+Classic
+</button>
+
+<button
+class="filter"
+onclick="filterServices('beard',this)">
+Beard
+</button>
+
+<button
+class="filter"
+onclick="filterServices('combo',this)">
+Combos
+</button>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<!-- LOW FADE -->
+
+<article
+class="service-card reveal"
+data-category="fade">
+
+<div class="service-image">
+
+<img
+src="https://lorenzogermanibarbershop.it/le-migliori-sfumature-per-capelli-uomo/sfumatura-capelli-uomo-2/"
+data-fallback="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=90"
+onerror="this.onerror=null;this.src=this.dataset.fallback;"
+alt="Low Fade Haircut">
+
+</div>
+
+<div class="service-body">
+
+<span class="service-tag">
+Trending Fade
+</span>
+
+<h3>
+Low Fade
+</h3>
+
+<p>
+Clean low fade with smooth blending and
+sharp professional finishing.
+</p>
+
+<div class="service-bottom">
+
+<span class="price">
+Rs. 900
+</span>
+
+<button
+class="book-btn"
+onclick="addService('Low Fade',900)">
+Book
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- HIGH FADE -->
+
+<article
+class="service-card reveal"
+data-category="fade">
+
+<div class="service-image">
+
+<img
+src="https://fadehaircut.co.uk/wp-content/uploads/2025/07/how-to-do-a-fade-haircut-1.jpg"
+data-fallback="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=90"
+onerror="this.onerror=null;this.src=this.dataset.fallback;"
+alt="High Fade Haircut">
+
+</div>
+
+<div class="service-body">
+
+<span class="service-tag">
+Sharp Fade
+</span>
+
+<h3>
+High Fade
+</h3>
+
+<p>
+High contrast fade with detailed blending
+and modern top styling.
+</p>
+
+<div class="service-bottom">
+
+<span class="price">
+Rs. 1,100
+</span>
+
+<button
+class="book-btn"
+onclick="addService('High Fade',1100)">
+Book
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- SKIN FADE -->
+
+<article
+class="service-card reveal"
+data-category="fade">
+
+<div class="service-image">
+
+<img
+src="https://storage.googleapis.com/msgsndr/FumCT1xSDV1AOg1t8oKL/media/689b35777b75782b6da10f1c.png"
+data-fallback="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=90"
+onerror="this.onerror=null;this.src=this.dataset.fallback;"
+alt="Skin Fade Haircut">
+
+</div>
+
+<div class="service-body">
+
+<span class="service-tag">
+Premium Fade
+</span>
+
+<h3>
+Skin Fade
+</h3>
+
+<p>
+Precision skin fade with clean edges and
+detailed barber blending.
+</p>
+
+<div class="service-bottom">
+
+<span class="price">
+Rs. 1,200
+</span>
+
+<button
+class="book-btn"
+onclick="addService('Skin Fade',1200)">
+Book
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- FRENCH CROP -->
+
+<article
+class="service-card reveal"
+data-category="fade">
+
+<div class="service-image">
+
+<img
+src="https://lowerfade.com/wp-content/uploads/2025/07/French-Crop-With-Beard%E2%80%8B.webp"
+data-fallback="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=90"
+onerror="this.onerror=null;this.src=this.dataset.fallback;"
+alt="French Crop Haircut">
+
+</div>
+
+<div class="service-body">
+
+<span class="service-tag">
+Modern Crop
+</span>
+
+<h3>
+French Crop
+</h3>
+
+<p>
+Textured crop with faded sides and
+a clean beard finish.
+</p>
+
+<div class="service-bottom">
+
+<span class="price">
+Rs. 1,000
+</span>
+
+<button
+class="book-btn"
+onclick="addService('French Crop',1000)">
+Book
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- ONE SIDE -->
+
+<article
+class="service-card reveal"
+data-category="classic">
+
+<div class="service-image">
+
+<img
+src="https://i.pinimg.com/736x/1a/79/e6/1a79e67e09213cd2020b452aed58dddf.jpg"
+data-fallback="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=90"
+onerror="this.onerror=null;this.src=this.dataset.fallback;"
+alt="One Side Haircut">
+
+</div>
+
+<div class="service-body">
+
+<span class="service-tag">
+Classic Luxury
+</span>
+
+<h3>
+One Side / Side Part
+</h3>
+
+<p>
+Polished side-part style with a clean
+taper and premium finish.
+</p>
+
+<div class="service-bottom">
+
+<span class="price">
+Rs. 1,000
+</span>
+
+<button
+class="book-btn"
+onclick="addService('One Side / Side Part',1000)">
+Book
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- SLICK BACK -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Al Nasir Hair Salon | Premium Grooming</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--black:#060606;
+--black2:#0d0d0d;
+--card:#121212;
+--card2:#181818;
+--gold:#c8a45b;
+--gold2:#f0d28b;
+--white:#ffffff;
+--muted:#969696;
+--line:rgba(201,164,92,.22);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:"DM Sans",sans-serif;
+background:var(--black);
+color:white;
+overflow-x:hidden;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+button,
+input{
+font-family:inherit;
+}
+
+.container{
+width:min(1180px,92%);
+margin:auto;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+background:rgba(5,5,5,.92);
+backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.navbar{
+height:76px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+font-family:"Playfair Display",serif;
+font-size:24px;
+font-weight:700;
+letter-spacing:2px;
+}
+
+.logo span{
+color:var(--gold2);
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:27px;
+}
+
+.nav-links a{
+font-size:13px;
+color:#ddd;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:var(--gold2);
+}
+
+.nav-book{
+border:1px solid var(--gold);
+padding:10px 17px;
+border-radius:30px;
+color:var(--gold2)!important;
+}
+
+.menu-btn{
+display:none;
+background:none;
+border:0;
+color:white;
+font-size:27px;
+cursor:pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+min-height:650px;
+height:74vh;
+max-height:760px;
+
+display:flex;
+align-items:center;
+
+position:relative;
+overflow:hidden;
+
+background:
+linear-gradient(
+90deg,
+rgba(0,0,0,.94),
+rgba(0,0,0,.65),
+rgba(0,0,0,.18)
+),
+
+url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=90")
+center/cover no-repeat;
+}
+
+.hero:after{
+content:"";
+position:absolute;
+left:0;
+right:0;
+bottom:0;
+height:28%;
+
+background:
+linear-gradient(
+transparent,
+var(--black)
+);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
+padding-top:55px;
+
+animation:heroIn .9s ease both;
+}
+
+.eyebrow{
+color:var(--gold2);
+font-size:11px;
+font-weight:800;
+letter-spacing:4px;
+text-transform:uppercase;
+margin-bottom:16px;
+}
+
+.hero h1{
+font-family:"Playfair Display",serif;
+font-size:clamp(46px,7vw,80px);
+line-height:.98;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:var(--gold2);
+}
+
+.hero p{
+color:#d0d0d0;
+max-width:570px;
+font-size:15px;
+line-height:1.8;
+}
+
+.hero-buttons{
+display:flex;
+gap:13px;
+flex-wrap:wrap;
+margin-top:28px;
+}
+
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+
+padding:14px 22px;
+
+border-radius:5px;
+border:1px solid var(--gold);
+
+font-size:13px;
+font-weight:800;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.btn-gold{
+background:linear-gradient(
+135deg,
+var(--gold2),
+var(--gold)
+);
+
+color:#111;
+}
+
+.btn-gold:hover{
+transform:translateY(-3px);
+box-shadow:
+0 15px 35px rgba(201,164,92,.25);
+}
+
+.btn-outline{
+color:white;
+background:rgba(0,0,0,.25);
+}
+
+.btn-outline:hover{
+background:white;
+color:#111;
+}
+
+@keyframes heroIn{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+/* ================= TRUST ================= */
+
+.trust{
+background:#0d0d0d;
+border-top:1px solid var(--line);
+border-bottom:1px solid var(--line);
+}
+
+.trust-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+}
+
+.trust-item{
+text-align:center;
+padding:23px 10px;
+
+border-right:1px solid rgba(255,255,255,.06);
+}
+
+.trust-item:last-child{
+border-right:0;
+}
+
+.trust-item strong{
+display:block;
+color:var(--gold2);
+font-size:13px;
+margin-bottom:4px;
+}
+
+.trust-item span{
+color:#777;
+font-size:11px;
+}
+
+
+/* ================= SECTION ================= */
+
+section{
+padding:88px 0;
+}
+
+.section-head{
+text-align:center;
+margin-bottom:40px;
+}
+
+.section-small{
+display:block;
+
+color:var(--gold2);
+
+font-size:11px;
+font-weight:800;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+}
+
+.section-head h2{
+font-family:"Playfair Display",serif;
+
+font-size:
+clamp(35px,5vw,53px);
+
+margin:11px 0;
+}
+
+.section-head p{
+max-width:620px;
+margin:auto;
+
+color:#888;
+
+line-height:1.7;
+}
+
+
+/* ================= FILTERS ================= */
+
+.filters{
+display:flex;
+justify-content:center;
+align-items:center;
+
+gap:9px;
+flex-wrap:wrap;
+
+margin-bottom:30px;
+}
+
+.filter{
+background:#111;
+
+border:1px solid #292929;
+
+color:#999;
+
+padding:9px 15px;
+
+border-radius:30px;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.filter.active,
+.filter:hover{
+background:var(--gold);
+border-color:var(--gold);
+color:#111;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services-grid{
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:20px;
+}
+
+.service-card{
+background:
+linear-gradient(
+145deg,
+#181818,
+#0e0e0e
+);
+
+border:1px solid rgba(255,255,255,.07);
+
+border-radius:10px;
+
+overflow:hidden;
+
+transition:.35s;
+}
+
+.service-card:hover{
+transform:translateY(-7px);
+
+border-color:var(--line);
+
+box-shadow:
+0 22px 55px rgba(0,0,0,.45);
+}
+
+.service-image{
+height:250px;
+
+background:#191919;
+
+overflow:hidden;
+
+position:relative;
+}
+
+.service-image img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.5s;
+}
+
+.service-card:hover .service-image img{
+transform:scale(1.06);
+}
+
+.service-body{
+padding:19px;
+}
+
+.service-tag{
+display:inline-block;
+
+color:var(--gold2);
+
+font-size:9px;
+
+font-weight:800;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+margin-bottom:7px;
+}
+
+.service-body h3{
+font-family:"Playfair Display",serif;
+
+font-size:22px;
+
+margin-bottom:6px;
+}
+
+.service-body p{
+color:#888;
+
+font-size:12px;
+
+line-height:1.6;
+
+min-height:40px;
+}
+
+.service-bottom{
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+margin-top:17px;
+}
+
+.price{
+color:var(--gold2);
+
+font-size:20px;
+
+font-weight:800;
+}
+
+.book-btn{
+background:var(--gold);
+
+border:0;
+
+color:#111;
+
+font-weight:800;
+
+padding:9px 14px;
+
+border-radius:4px;
+
+cursor:pointer;
+
+transition:.25s;
+}
+
+.book-btn:hover{
+background:var(--gold2);
+transform:translateY(-2px);
+}
+
+
+/* ================= PROMO ================= */
+
+.promo{
+border-top:1px solid var(--line);
+border-bottom:1px solid var(--line);
+
+background:
+
+linear-gradient(
+90deg,
+rgba(0,0,0,.91),
+rgba(0,0,0,.45)
+),
+
+url("https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1800&q=90")
+center/cover no-repeat;
+}
+
+.promo-content{
+max-width:650px;
+}
+
+.promo h2{
+font-family:"Playfair Display",serif;
+
+font-size:
+clamp(38px,5vw,58px);
+
+line-height:1.02;
+
+margin:10px 0 17px;
+}
+
+.promo p{
+color:#ccc;
+
+line-height:1.8;
+}
+
+
+/* ================= GALLERY ================= */
+
+.gallery{
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+grid-auto-rows:230px;
+
+gap:11px;
+}
+
+.gallery-item{
+overflow:hidden;
+
+border-radius:7px;
+
+background:#181818;
+}
+
+.gallery-item.tall{
+grid-row:span 2;
+}
+
+.gallery-item.wide{
+grid-column:span 2;
+}
+
+.gallery-item img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.5s;
+}
+
+.gallery-item:hover img{
+transform:scale(1.08);
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-grid{
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:55px;
+
+align-items:center;
+}
+
+.about-image{
+height:500px;
+
+border-radius:9px;
+
+overflow:hidden;
+
+border:1px solid var(--line);
+
+background:#181818;
+}
+
+.about-image img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+}
+
+.about-copy h2{
+font-family:"Playfair Display",serif;
+
+font-size:
+clamp(37px,5vw,54px);
+
+margin:11px 0 19px;
+}
+
+.about-copy p{
+color:#929292;
+
+line-height:1.85;
+
+margin-bottom:12px;
+}
+
+.features{
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:14px;
+
+margin-top:24px;
+}
+
+.feature{
+border-left:2px solid var(--gold);
+
+padding-left:11px;
+}
+
+.feature strong{
+display:block;
+
+font-size:13px;
+}
+
+.feature span{
+font-size:11px;
+
+color:#777;
+}
+
+
+/* ================= REVIEWS ================= */
+
+.review-grid{
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:19px;
+}
+
+.review{
+background:#121212;
+
+border:1px solid rgba(255,255,255,.06);
+
+padding:25px;
+
+border-radius:8px;
+}
+
+.stars{
+color:var(--gold2);
+
+letter-spacing:2px;
+
+margin-bottom:13px;
+}
+
+.review p{
+font-size:13px;
+
+color:#aaa;
+
+line-height:1.8;
+}
+
+.reviewer{
+display:flex;
+
+align-items:center;
+
+gap:11px;
+
+margin-top:18px;
+}
+
+.avatar{
+width:40px;
+height:40px;
+
+border-radius:50%;
+
+background:var(--gold);
+
+color:#111;
+
+display:grid;
+
+place-items:center;
+
+font-weight:900;
+}
+
+.reviewer strong{
+display:block;
+
+font-size:12px;
+}
+
+.reviewer span{
+font-size:10px;
+
+color:#666;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-box{
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+background:#111;
+
+border:1px solid var(--line);
+
+border-radius:10px;
+
+overflow:hidden;
+}
+
+.contact-info{
+padding:42px;
+}
+
+.contact-info h2{
+font-family:"Playfair Display",serif;
+
+font-size:39px;
+
+margin:10px 0 15px;
+}
+
+.contact-info>p{
+color:#888;
+
+line-height:1.8;
+}
+
+.contact-details{
+display:grid;
+
+gap:15px;
+
+margin:25px 0;
+}
+
+.contact-details strong{
+display:block;
+
+color:var(--gold2);
+
+font-size:10px;
+
+letter-spacing:1.5px;
+
+margin-bottom:3px;
+}
+
+.contact-details div{
+color:#aaa;
+
+font-size:13px;
+}
+
+.contact-image{
+min-height:390px;
+
+display:grid;
+
+place-items:center;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.28),
+rgba(0,0,0,.58)
+),
+
+url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=90")
+center/cover no-repeat;
+}
+
+.location-card{
+background:rgba(8,8,8,.88);
+
+border:1px solid var(--gold);
+
+padding:24px;
+
+text-align:center;
+}
+
+.location-card h3{
+font-family:"Playfair Display",serif;
+
+font-size:24px;
+}
+
+.location-card p{
+color:#888;
+
+font-size:12px;
+
+margin-top:5px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+background:#050505;
+
+border-top:1px solid #161616;
+
+padding:50px 0 22px;
+}
+
+.footer-grid{
+display:grid;
+
+grid-template-columns:
+1.5fr 1fr 1fr;
+
+gap:40px;
+}
+
+.footer-brand p{
+color:#777;
+
+max-width:420px;
+
+font-size:12px;
+
+line-height:1.8;
+
+margin-top:14px;
+}
+
+.footer-column h4{
+color:var(--gold2);
+
+margin-bottom:14px;
+}
+
+.footer-column a{
+display:block;
+
+color:#777;
+
+font-size:12px;
+
+margin-bottom:8px;
+}
+
+.footer-column a:hover{
+color:white;
+}
+
+.copyright{
+text-align:center;
+
+border-top:1px solid #151515;
+
+margin-top:35px;
+
+padding-top:19px;
+
+color:#555;
+
+font-size:10px;
+}
+
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+position:fixed;
+
+right:18px;
+bottom:18px;
+
+width:58px;
+height:58px;
+
+border-radius:50%;
+
+background:#25D366;
+
+display:grid;
+
+place-items:center;
+
+color:white;
+
+font-size:24px;
+
+z-index:1100;
+
+box-shadow:
+0 8px 30px rgba(0,0,0,.5);
+
+transition:.25s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+
+/* ================= MODAL ================= */
+
+.modal{
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.84);
+
+backdrop-filter:blur(8px);
+
+display:none;
+
+align-items:center;
+
+justify-content:center;
+
+padding:18px;
+
+z-index:2000;
+}
+
+.modal.show{
+display:flex;
+}
+
+.modal-box{
+width:min(510px,100%);
+
+max-height:90vh;
+
+overflow:auto;
+
+background:#121212;
+
+border:1px solid var(--gold);
+
+border-radius:10px;
+
+padding:28px;
+
+position:relative;
+}
+
+.close{
+position:absolute;
+
+right:17px;
+top:10px;
+
+font-size:27px;
+
+color:#999;
+
+cursor:pointer;
+}
+
+.modal-box h2{
+font-family:"Playfair Display",serif;
+
+font-size:32px;
+}
+
+.modal-box>p{
+color:#777;
+
+font-size:12px;
+
+margin:5px 0 20px;
+}
+
+.selected-services{
+display:grid;
+
+gap:7px;
+
+margin-bottom:15px;
+}
+
+.selected-item{
+background:#1b1b1b;
+
+padding:10px;
+
+border-radius:4px;
+
+display:flex;
+
+justify-content:space-between;
+
+font-size:12px;
+}
+
+.total{
+border-top:1px solid #292929;
+
+padding-top:13px;
+
+display:flex;
+
+justify-content:space-between;
+
+font-weight:800;
+
+margin-bottom:16px;
+}
+
+.total span:last-child{
+color:var(--gold2);
+}
+
+.input{
+width:100%;
+
+background:#090909;
+
+border:1px solid #292929;
+
+color:white;
+
+padding:12px;
+
+border-radius:4px;
+
+margin-bottom:9px;
+
+outline:none;
+}
+
+.input:focus{
+border-color:var(--gold);
+}
+
+
+/* ================= REVEAL ================= */
+
+.reveal{
+opacity:0;
+
+transform:translateY(24px);
+
+transition:
+opacity .7s ease,
+transform .7s ease;
+}
+
+.reveal.visible{
+opacity:1;
+
+transform:translateY(0);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:850px){
+
+.nav-links{
+position:absolute;
+
+top:76px;
+left:0;
+
+width:100%;
+
+background:#080808;
+
+display:none;
+
+flex-direction:column;
+
+padding:21px;
+
+border-bottom:1px solid var(--line);
+}
+
+.nav-links.open{
+display:flex;
+}
+
+.menu-btn{
+display:block;
+}
+
+.services-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.review-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.about-grid,
+.contact-box{
+grid-template-columns:1fr;
+}
+
+.gallery{
+grid-template-columns:repeat(2,1fr);
+}
+
+.gallery-item.tall,
+.gallery-item.wide{
+grid-row:span 1;
+grid-column:span 1;
+}
+
+.footer-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+
+@media(max-width:560px){
+
+section{
+padding:65px 0;
+}
+
+.hero{
+min-height:600px;
+
+height:70vh;
+
+background-position:
+58% center;
+}
+
+.hero h1{
+font-size:47px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.btn{
+width:100%;
+}
+
+.trust-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.trust-item{
+border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.services-grid,
+.review-grid{
+grid-template-columns:1fr;
+}
+
+.service-image{
+height:245px;
+}
+
+.gallery{
+grid-auto-rows:185px;
+}
+
+.about-image{
+height:350px;
+}
+
+.contact-info{
+padding:29px 22px;
+}
+
+.contact-info h2{
+font-size:34px;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#home" class="logo">
+AL <span>NASIR</span>
+</a>
+
+<button
+class="menu-btn"
+onclick="toggleMenu()">
+☰
+</button>
+
+<nav
+class="nav-links"
+id="navLinks">
+
+<a href="#home">Home</a>
+
+<a href="#services">
+Styles
+</a>
+
+<a href="#gallery">
+Gallery
+</a>
+
+<a href="#about">
+About
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+<a
+href="#services"
+class="nav-book">
+Book Now
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section
+class="hero"
+id="home">
+
+<div class="container hero-content">
+
+<div class="eyebrow">
+AL NASIR • PREMIUM MEN'S GROOMING
+</div>
+
+<h1>
+Sharp Cuts.<br>
+<span>Signature Style.</span>
+</h1>
+
+<p>
+Modern fades, precision cuts, beard sculpting and
+premium grooming — crafted for today's confident man.
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="#services"
+class="btn btn-gold">
+Explore Styles
+</a>
+
+<a
+href="#contact"
+class="btn btn-outline">
+Visit Salon
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= TRUST ================= -->
+
+<div class="trust">
+
+<div class="container trust-grid">
+
+<div class="trust-item">
+<strong>Precision Cuts</strong>
+<span>Detailed finishing</span>
+</div>
+
+<div class="trust-item">
+<strong>Trending Styles</strong>
+<span>Modern barber looks</span>
+</div>
+
+<div class="trust-item">
+<strong>Premium Feel</strong>
+<span>Luxury experience</span>
+</div>
+
+<div class="trust-item">
+<strong>Easy Booking</strong>
+<span>WhatsApp appointment</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="section-small">
+Signature Menu
+</span>
+
+<h2>
+Trending Hair & Grooming
+</h2>
+
+<p>
+Choose a haircut or grooming style and book
+your preferred service.
+</p>
+
+</div>
+
+
+<div class="filters">
+
+<button
+class="filter active"
+onclick="filterServices('all',this)">
+All Styles
+</button>
+
+<button
+class="filter"
+onclick="filterServices('fade',this)">
+Fades
+</button>
+
+<button
+class="filter"
+onclick="filterServices('classic',this)">
+Classic
+</button>
+
+<button
+class="filter"
+onclick="filterServices('beard',this)">
+Beard
+</button>
+
+<button
+class="filter"
+onclick="filterServices('combo',this)">
+Combos
+</button>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<!-- LOW FADE -->
+
+<article
+class="service-card reveal"
+data-category="fade">
+
+<div class="service-image">
+
+<img
+src="https://lorenzogermanibarbershop.it/le-migliori-sfumature-per-capelli-uomo/sfumatura-capelli-uomo-2/"
+data-fallback="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=90"
+onerror="this.onerror=null;this.src=this.dataset.fallback;"
+alt="Low Fade Haircut">
+
+</div>
+
+<div class="service-body">
+
+<span class="service-tag">
+Trending Fade
+</span>
+
+<h3>
+Low Fade
+</h3>
+
+<p>
+Clean low fade with smooth blending and
+sharp professional finishing.
+</p>
+
+<div class="service-bottom">
+
+<span class="price">
+Rs. 900
+</span>
+
+<button
+class="book-btn"
+onclick="addService('Low Fade',900)">
+Book
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- HIGH FADE -->
+
+<article
+class="service-card reveal"
+data-category="fade">
+
+<div class="service-image">
+
+<img
+src="https://fadehaircut.co.uk/wp-content/uploads/2025/07/how-to-do-a-fade-haircut-1.jpg"
+data-fallback="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=90"
+onerror="this.onerror=null;this.src=this.dataset.fallback;"
+alt="High Fade Haircut">
+
+</div>
+
+<div class="service-body">
+
+<span class="service-tag">
+Sharp Fade
+</span>
+
+<h3>
+High Fade
+</h3>
+
+<p>
+High contrast fade with detailed blending
+and modern top styling.
+</p>
+
+<div class="service-bottom">
+
+<span class="price">
+Rs. 1,100
+</span>
+
+<button
+class="book-btn"
+onclick="addService('High Fade',1100)">
+Book
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- SKIN FADE -->
+
+<article
+class="service-card reveal"
+data-category="fade">
+
+<div class="service-image">
+
+<img
+src="https://storage.googleapis.com/msgsndr/FumCT1xSDV1AOg1t8oKL/media/689b35777b75782b6da10f1c.png"
+data-fallback="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=90"
+onerror="this.onerror=null;this.src=this.dataset.fallback;"
+alt="Skin Fade Haircut">
+
+</div>
+
+<div class="service-body">
+
+<span class="service-tag">
+Premium Fade
+</span>
+
+<h3>
+Skin Fade
+</h3>
+
+<p>
+Precision skin fade with clean edges and
+detailed barber blending.
+</p>
+
+<div class="service-bottom">
+
+<span class="price">
+Rs. 1,200
+</span>
+
+<button
+class="book-btn"
+onclick="addService('Skin Fade',1200)">
+Book
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- FRENCH CROP -->
+
+<article
+class="service-card reveal"
+data-category="fade">
+
+<div class="service-image">
+
+<img
+src="https://lowerfade.com/wp-content/uploads/2025/07/French-Crop-With-Beard%E2%80%8B.webp"
+data-fallback="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=90"
+onerror="this.onerror=null;this.src=this.dataset.fallback;"
+alt="French Crop Haircut">
+
+</div>
+
+<div class="service-body">
+
+<span class="service-tag">
+Modern Crop
+</span>
+
+<h3>
+French Crop
+</h3>
+
+<p>
+Textured crop with faded sides and
+a clean beard finish.
+</p>
+
+<div class="service-bottom">
+
+<span class="price">
+Rs. 1,000
+</span>
+
+<button
+class="book-btn"
+onclick="addService('French Crop',1000)">
+Book
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- ONE SIDE -->
+
+<article
+class="service-card reveal"
+data-category="classic">
+
+<div class="service-image">
+
+<img
+src="https://i.pinimg.com/736x/1a/79/e6/1a79e67e09213cd2020b452aed58dddf.jpg"
+data-fallback="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=90"
+onerror="this.onerror=null;this.src=this.dataset.fallback;"
+alt="One Side Haircut">
+
+</div>
+
+<div class="service-body">
+
+<span class="service-tag">
+Classic Luxury
+</span>
+
+<h3>
+One Side / Side Part
+</h3>
+
+<p>
+Polished side-part style with a clean
+taper and premium finish.
+</p>
+
+<div class="service-bottom">
+
+<span class="price">
+Rs. 1,000
+</span>
+
+<button
+class="book-btn"
+onclick="addService('One Side / Side Part',1000)">
+Book
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- SLICK BACK -->
